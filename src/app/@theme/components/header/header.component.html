@@ -1,0 +1,13 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a (click)="toggleSidebar()" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <span class="logo">PMS-<span>admin</span></span>
+  </div>
+</div>
+
+<div class="header-container">
+  <span style="margin-right: 25px; font-size: 15px;">Howdy {{ user?.name }}</span>
+  <button nbButton status="primary" (click)="logout()">Logout</button>
+</div>
